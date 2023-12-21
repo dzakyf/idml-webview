@@ -16,13 +16,13 @@ class MainActivity : AppCompatActivity() {
 
         wv.webViewClient = WebViewClient()
 
-        //resource to be loaded
-        wv.loadUrl("https://www.idmall.id")
-
         //enabling javascript
         wv.settings.javaScriptEnabled = true
 
         //fetch resource from network instead of using cached data
         wv.settings.cacheMode = WebSettings.LOAD_NO_CACHE
+
+        //resource to be loaded
+        wv.loadUrl("https://www.idmall.id")
     }
 }
